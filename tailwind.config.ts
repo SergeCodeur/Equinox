@@ -17,6 +17,11 @@ const config = {
         "2xl": "1400px",
       },
     },
+    boxShadow: {
+      "search-input-shadow": "0px 1px 2px rgba(16, 24, 40, 0.05)",
+      table:
+        "0px 1px 2px 0px rgba(16, 24, 40, 0.06), 0px 1px 3px 0px rgba(16, 24, 40, 0.10)",
+    },
     fontSize: {
       md: [
         "10.04px",
@@ -197,8 +202,31 @@ const config = {
       purple: {
         500: "#9D65EA",
       },
+      stone: {
+        300: "#C2C2C2",
+      },
+      violet: {
+        500: "#7F56D9",
+      },
     },
-    extend: {},
+    extend: {
+      keyframes: {
+        "bounce-left": {
+          "0%, 100%": {
+            transform: "translateX(-25%)",
+            "animation-timing-function": "cubic-bezier(0.8, 0, 1, 1)",
+          },
+
+          "50%": {
+            transform: "translateX(0)",
+            "animation-timing-function": "cubic-bezier(0, 0, 0.2, 1)",
+          },
+        },
+      },
+      animation: {
+        "bounce-left": "bounce-left 1s ease-in-out infinite",
+      },
+    },
   },
   plugins: [],
 } satisfies Config;
