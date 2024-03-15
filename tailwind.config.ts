@@ -167,6 +167,12 @@ const config = {
           fontWeight: "600",
         },
       ],
+      "5xl-700": [
+        "48px",
+        {
+          fontWeight: "700",
+        },
+      ],
       "6xl-600": [
         "64px",
         {
@@ -190,6 +196,7 @@ const config = {
         800: "#292A2E",
       },
       neutral: {
+        400: "#98999B",
         600: "#424444",
         700: "#37393A",
       },
@@ -225,6 +232,13 @@ const config = {
       },
       animation: {
         "bounce-left": "bounce-left 1s ease-in-out infinite",
+      },
+      backgroundImage: {
+        "gradiant-195":
+          "linear-gradient(180deg, #FFFFFF 24.84%, #2537E5 101.66%)",
+        "video-image": "url('/video.png')",
+        "bleu-gradiant":
+          "linear-gradient(180deg, rgba(4, 8, 26, 0.00) 0%, #04081A 100%)",
       },
     },
   },
