@@ -206,7 +206,7 @@ export const UploadIcon = ({ width, height, className }: SvgIconProps) => {
     </svg>
   );
 };
-export const ArrowLeftIcon = ({ width, height, className }: SvgIconProps) => {
+export const ArrowLeftIcon = ({ className }: SvgIconProps) => {
   return (
     <svg
       aria-hidden="true"
@@ -222,7 +222,7 @@ export const ArrowLeftIcon = ({ width, height, className }: SvgIconProps) => {
   );
 };
 
-export const PenIcon = ({ width, height, className }: SvgIconProps) => {
+export const PenIcon = ({ width, height }: SvgIconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -245,6 +245,110 @@ export const PenIcon = ({ width, height, className }: SvgIconProps) => {
           <rect width="20" height="20" fill="currentColor" />
         </clipPath>
       </defs>
+    </svg>
+  );
+};
+export const EllipsisIcon = ({ width, height, className }: SvgIconProps) => {
+  return (
+    <svg
+      width={width ? width : "16"}
+      height={height ? height : "4"}
+      viewBox="0 0 16 4"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={`fill-white ${className}`}
+    >
+      <circle cx="1.68421" cy="1.68421" r="1.68421" fill="currentColor" />
+      <circle cx="7.99988" cy="1.68421" r="1.68421" fill="currentColor" />
+      <circle cx="14.3158" cy="1.68421" r="1.68421" fill="currentColor" />
+    </svg>
+  );
+};
+export const PlayIcon = ({ width, height, className }: SvgIconProps) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="224"
+      height="224"
+      viewBox="0 0 224 224"
+      fill="none"
+    >
+      <g filter="url(#filter0_d_146_5320)">
+        <circle cx="112" cy="109" r="74" fill="#2537E5" />
+        <circle
+          cx="112"
+          cy="109"
+          r="79.5106"
+          stroke="white"
+          strokeOpacity="0.1"
+          strokeWidth="11.0213"
+        />
+        <path
+          d="M94.0701 91.5653C94.0701 84.8992 101.286 80.7329 107.059 84.0659L137.291 101.52C143.064 104.853 143.064 113.186 137.291 116.519L107.059 133.973C101.286 137.306 94.0701 133.14 94.0701 126.474L94.0701 91.5653Z"
+          fill="white"
+        />
+      </g>
+      <defs>
+        <filter
+          id="filter0_d_146_5320"
+          x="0.291279"
+          y="0.440215"
+          width="223.417"
+          height="223.417"
+          filterUnits="userSpaceOnUse"
+          colorInterpolationFilters="sRGB"
+        >
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
+          <feColorMatrix
+            in="SourceAlpha"
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha"
+          />
+          <feOffset dy="3.14894" />
+          <feGaussianBlur stdDeviation="13.3436" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0"
+          />
+          <feBlend
+            mode="normal"
+            in2="BackgroundImageFix"
+            result="effect1_dropShadow_146_5320"
+          />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="effect1_dropShadow_146_5320"
+            result="shape"
+          />
+        </filter>
+      </defs>
+    </svg>
+  );
+};
+export const CheckCircleIcon = ({ width, height, className }: SvgIconProps) => {
+  return (
+    <svg
+      width={width ? width : "27"}
+      height={height ? height : "26"}
+      viewBox="0 0 27 26"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        x="0.5"
+        y="0.287109"
+        width="26.3902"
+        height="25.4255"
+        rx="12.7127"
+        className={`fill-primary ${className}`}
+      />
+      <path
+        d="M11.5824 15.5535L9.29519 13.2664C9.17194 13.1431 9.00479 13.0739 8.8305 13.0739C8.65621 13.0739 8.48906 13.1431 8.36582 13.2664C8.24258 13.3896 8.17334 13.5567 8.17334 13.731C8.17334 13.8173 8.19034 13.9028 8.22336 13.9825C8.25639 14.0623 8.3048 14.1347 8.36582 14.1957L11.121 16.9509C11.378 17.2079 11.7933 17.2079 12.0503 16.9509L19.0239 9.97732C19.1471 9.85407 19.2164 9.68692 19.2164 9.51263C19.2164 9.33834 19.1471 9.17119 19.0239 9.04795C18.9006 8.92471 18.7335 8.85547 18.5592 8.85547C18.3849 8.85547 18.2178 8.92471 18.0945 9.04795L11.5824 15.5535Z"
+        fill="white"
+      />
     </svg>
   );
 };
