@@ -17,7 +17,7 @@ const FolderRow = ({ folderName, folderId }: FolderRowsProps) => {
     if (!pathname) return;
 
     setActive(pathname.includes(folderId.toString()));
-  }, [pathname]);
+  }, [pathname, folderId]);
   return (
     <Link
       href={`/dashboard/${folderId}`}
@@ -25,7 +25,11 @@ const FolderRow = ({ folderName, folderId }: FolderRowsProps) => {
         active ? "text-white border-white/10 bg-slate-800" : ""
       }`}
     >
-      <FolderIcon className="group-hover:stroke-white group-hover:fill-white" />
+      <FolderIcon
+        className={`group-hover:stroke-white group-hover:fill-white ${
+          active ? "stroke-white fill-white" : ""
+        }`}
+      />
       <span className="truncate">{folderName}</span>
     </Link>
   );
