@@ -69,7 +69,7 @@ const UploadForm = () => {
       return (
         <span className="flex flex-col gap-[7px]">
           <span className="text-base-600 text-white">
-            Cliquez pour
+            Cliquez pour{" "}
             <span className="text-primary">télécharger un cours</span>
           </span>
           <span className="text-center text-xs text-white/50">
@@ -109,7 +109,7 @@ const UploadForm = () => {
     <>
       <div
         className={cn(
-          "rounded-[9px] border border-white/10 border-solid grid w-full justify-center items-center py-8 px-[115px] bg-secondary"
+          "rounded-[9px] border border-white/10 border-solid grid w-full justify-center items-center py-8 px-[115px] bg-secondary cursor-pointer"
           // {
           //   "bg-green-100 border-green-300": isDragAccept,
           //   "bg-red-100 border-red-300":
