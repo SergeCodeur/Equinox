@@ -1,8 +1,9 @@
 import { Badge } from "../ui/badge";
+import SummaryDataTable from "./SummaryDataTable";
 
 const SummaryTableContainer = () => {
   return (
-    <div className="flex flex-col w-full rounded-lg border border-white/10 bg-secondary shadow-table">
+    <div className="flex flex-col w-full rounded-lg border border-white/10 bg-secondary shadow-table overflow-hidden">
       <div className="flex flex-col items-start py-5 px-6">
         <span className="flex gap-2 items-center ">
           <h3 className="text-white text-base-500 leading-7">Vos synthèses</h3>
@@ -12,6 +13,7 @@ const SummaryTableContainer = () => {
           Garder un oeil sur le taux de maîtrise de vos synthèses.
         </p>
       </div>
+      <SummaryDataTable />
     </div>
   );
 };
