@@ -12,7 +12,7 @@ export type FolderContentProps = {
 
 const FolderContent = ({ params: { id } }: FolderContentProps) => {
   return (
-    <div className="pt-[35px] pb-[37px] px-[37px] h-full space-y-[29px]">
+    <div className="pt-[35px] pb-[37px] px-[37px] space-y-[29px]">
       <div className="space-y-6">
         <SearchInput />
         <div className="flex justify-between py-6 border-b border-b-white/10">
