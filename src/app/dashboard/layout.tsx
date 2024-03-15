@@ -8,7 +8,7 @@ export default function RootLayout({
   return (
     <div className="w-full h-full flex">
       <Sidebar />
-      <section className="flex-1">{children}</section>
+      <section className="flex-1 overflow-y-scroll h-full">{children}</section>
     </div>
   );
 }
