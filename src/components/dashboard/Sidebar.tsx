@@ -1,4 +1,4 @@
-import { FaEllipsis } from "react-icons/fa6";
+import { EllipsisIcon } from "@/assets/icons/SvgIcon";
 import Logo from "../ui/Logo";
 import FavoriteAndDeleteActions from "./FavoriteAndDeleteActions";
 import FolderWrapper from "./FolderWrapper";
@@ -13,7 +13,7 @@ const Sidebar = ({ className }: { className?: string }) => {
         <div className="flex gap-[46px] items-center justify-between mb-[27px]">
           <Logo className="h-[18.1px]" />
           <button className="h-9 w-9 border border-white/10 rounded-md p-[6px] text-white flex justify-center items-center">
-            <FaEllipsis />
+            <EllipsisIcon />
           </button>
         </div>
         <FolderWrapper />
