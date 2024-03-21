@@ -58,6 +58,7 @@ const SignUp = () => {
             height={586}
             width={502}
             className="w-full object-cover"
+            priority
           />
         </div>
       </div>
