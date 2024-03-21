@@ -1,48 +1,66 @@
+import SvgOrange from "@/assets/SvgBgOrange";
+import DashboardUi from "@/assets/images/dashboard-ui-design.svg";
+import Profile from "@/assets/images/user.png";
+import SignUpForm from "@/components/authentification/SignUpForm";
 import Logo from "@/components/ui/Logo";
+import Image from "next/image";
+import Link from "next/link";
 
 const SignUp = () => {
   return (
     <div className="flex h-screen bg-gray-900 overflow-hidden relative">
-      <div className="max-w-[485px] w-full bg-secondary flex flex-col items-start relative">
-        <Logo className="h-7 mt-7 ml-6" />
-        <div className="mt-[110px] ml-[125px]">
-          <h2 className="mb-2 text-[32px] font-semibold text-white">
-            S&apos;inscrire
-          </h2>
-          <h3 className="text-white text-sm">Commencez dès maintenant.</h3>
+      <div className="w-[450px] 2xl:w-[575px]  bg-secondary flex flex-col items-start relative">
+        <div className="bg-secondary w-[577px] 2xl:w-[702px] h-[1110px] rounded-tr-[30%50%] 2xl:rounded-tr-[30%60%] 2xl:rounded-br-[30%60%] rounded-br-[30%50%] top-2/4 -translate-y-2/4 -right-[75px] absolute z-10"></div>
+        <Logo className="h-7 mt-7 ml-6 relative z-[11]" />
+        <div className="flex flex-col justify-between relative z-[11] h-full">
+          <div className="mt-[30px] 2xl:mt-[125px] ml-[90px] 2xl:ml-[125px] max-w-[320px] w-full">
+            <h2 className="mb-2 text-[32px] font-semibold text-white">
+              S&apos;inscrire
+            </h2>
+            <h3 className="text-white text-sm">Commencez dès maintenant.</h3>
+            <SignUpForm className="mt-6 mb-6" />
+            <span className="text-gray-500 text-xs-500">
+              Vous possédez déjà un compte ?{" "}
+              <Link href="/sign-in" className="text-primary">
+                Connectez-vous ici !
+              </Link>
+            </span>
+          </div>
+          <div className="flex justify-between items-center w-full text-gray-500 text-xs mb-4 pl-1">
+            <span>www.equinoxai.com</span>
+            <span>support@equinoxai.com</span>
+          </div>
         </div>
-        {/* <SignUpForm /> */}
+        <SvgOrange className="absolute 2xl:-right-[75%] -right-[90%] top-2/4 -translate-y-2/4 z-[9]" />
       </div>
-      {/* <svg
-        width="577"
-        height="100%"
-        viewBox="0 0 577 832"
-        fill="none"
-        className="absolute z-10"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <ellipse cx="288.5" cy="415.5" rx="288.5" ry="722.5" fill="#04081A" />
-        <path
-          d="M576.5 415.5C576.5 614.966 544.215 795.525 492.036 926.199C465.946 991.538 434.891 1044.38 400.434 1080.88C365.977 1117.38 328.151 1137.5 288.5 1137.5C248.849 1137.5 211.023 1117.38 176.566 1080.88C142.109 1044.38 111.054 991.538 84.964 926.199C32.7847 795.525 0.5 614.966 0.5 415.5C0.5 216.034 32.7847 35.4751 84.964 -95.1992C111.054 -160.538 142.109 -213.38 176.566 -249.879C211.023 -286.377 248.849 -306.5 288.5 -306.5C328.151 -306.5 365.977 -286.377 400.434 -249.879C434.891 -213.38 465.946 -160.538 492.036 -95.1992C544.215 35.4751 576.5 216.034 576.5 415.5Z"
-          stroke="url(#paint0_linear_100_1172)"
-          strokeOpacity="0.5"
-        />
-        <defs>
-          <linearGradient
-            id="paint0_linear_100_1172"
-            x1="551.5"
-            y1="23"
-            x2="557"
-            y2="816"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stopOpacity="0" />
-            <stop offset="0.483117" />
-            <stop offset="1" stopOpacity="0" />
-          </linearGradient>
-        </defs>
-      </svg> */}
-      <div className="flex-1"></div>
+      <div className="flex-1 mt-[52px] pl-[209px] relative z-20">
+        <h1 className="italic text-white text-3xl-400 max-w-[525px] w-full leading-[40px] mb-6">
+          Equinox.AI est la nouvelle façon d&apos;apprendre rapidement et
+          facilement avec l&apos;IA.
+        </h1>
+        <div className="flex items-center gap-[9px]">
+          <Image
+            className="w-[49px] h-[49px] rounded-full"
+            src={Profile.src}
+            alt=""
+            width={42}
+            height={42}
+          />
+          <span className="flex flex-col items-start">
+            <span className="text-base-600 text-white">Zeilani Halilou</span>
+            <span className="text-sm text-white">fondateur de Equinox.AI</span>
+          </span>
+        </div>
+        <div className="flex items-end justify-end mt-[42px]">
+          <Image
+            src={DashboardUi}
+            alt=""
+            height={586}
+            width={502}
+            className="w-full object-cover"
+          />
+        </div>
+      </div>
     </div>
   );
 };
