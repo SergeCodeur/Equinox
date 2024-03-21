@@ -24,8 +24,11 @@ const FooterSection = () => {
             </li>
           </ul>
           <div>
-            <Button className="mx-auto py-[20.8px] px-[56.8px] text-xl-500 leading-[27px] text-white">
-              Commencer vos 7 jours d&apos;éssai
+            <Button
+              asChild
+              className="mx-auto py-[20.8px] px-[56.8px] h-[70px] !text-xl-500 leading-[27px] text-white"
+            >
+              <Link href="/sign-up">Commencer vos 7 jours d&apos;éssai</Link>
             </Button>
           </div>
         </nav>
