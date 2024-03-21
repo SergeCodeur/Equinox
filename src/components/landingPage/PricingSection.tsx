@@ -1,5 +1,6 @@
 import SvgOrange from "@/assets/SvgBgOrange";
 import { CheckCircleIcon } from "@/assets/icons/SvgIcon";
+import Link from "next/link";
 import MaxWidthContainer from "../MaxWidthContainer";
 import { Button } from "../ui/button";
 
@@ -64,8 +65,11 @@ const PricingSection = () => {
               </ol>
             ))}
           </ul>
-          <Button className="mx-auto py-[20.8px] px-[56.8px] text-xl-500 leading-[27px] text-white">
-            Commencer vos 7 jours d&apos;éssai
+          <Button
+            asChild
+            className="mx-auto py-[20.8px] px-[56.8px] h-[70px] leading-[27px] !text-xl-500"
+          >
+            <Link href="/sign-up">Commencer vos 7 jours d&apos;éssai</Link>
           </Button>
         </MaxWidthContainer>
       </section>

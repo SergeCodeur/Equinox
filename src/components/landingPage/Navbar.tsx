@@ -23,7 +23,9 @@ const Navbar = () => {
           </li>
         </ul>
         <div>
-          <Button>Commencer</Button>
+          <Button asChild className="h-[50px] rounded-lg">
+            <Link href="/sign-up">Commencer</Link>
+          </Button>
         </div>
       </nav>
     </MaxWidthContainer>

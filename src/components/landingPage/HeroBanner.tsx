@@ -1,4 +1,5 @@
 import SvgOrange from "@/assets/SvgBgOrange";
+import Link from "next/link";
 import MaxWidthContainer from "../MaxWidthContainer";
 import { Button } from "../ui/button";
 
@@ -27,13 +28,16 @@ const HeroBanner = () => {
             <div className="flex gap-8 justify-center items-start w-full mt-8">
               <Button
                 variant="outline"
-                className="!text-xl-500 text-white leading-[27px] border-[1.37px] border-white/10 py-[20.5px] px-[6.83px] w-[267px] h-[69px] rounded-xl"
+                className="!text-xl-500 text-white leading-[27px] py-[20.5px] px-[6.83px] w-[267px] h-[69px]"
               >
                 En savoir plus
               </Button>
               <div className="flex flex-col items-center space-y-2.5">
-                <Button className="!text-xl-500 text-white leading-[27px] border-[1.37px] border-white/10 py-[20.5px] px-[6.83px] w-[267px] h-[69px] rounded-xl">
-                  Commencer
+                <Button
+                  asChild
+                  className="!text-xl-500 leading-[27px] border-4 py-[20.5px] px-[6.83px] w-[267px] h-[69px]"
+                >
+                  <Link href="/sign-up">Commencer</Link>
                 </Button>
                 <span className="text-[#98999B] text-sm">
                   7 jours d&apos;essai gratuit
