@@ -125,6 +125,12 @@ const config = {
           fontWeight: "600",
         },
       ],
+      "3xl-400": [
+        "36px",
+        {
+          fontWeight: "500",
+        },
+      ],
       "3xl-500": [
         "36px",
         {
@@ -186,13 +192,16 @@ const config = {
       primary: "#2537E5",
       secondary: "#04081A",
       slate: {
+        600: "#545571",
         800: "#1B1C3D",
+        900: "#11113B",
       },
       gray: {
         500: "#667085",
         900: "#0F1023",
       },
       zinc: {
+        400: "#979CA5",
         800: "#292A2E",
       },
       neutral: {
@@ -214,6 +223,7 @@ const config = {
       },
       violet: {
         500: "#7F56D9",
+        950: "#26266A",
       },
     },
     extend: {
