@@ -19,8 +19,11 @@ const config = {
     },
     boxShadow: {
       "search-input-shadow": "0px 1px 2px rgba(16, 24, 40, 0.05)",
+      popup: "0px 4px 35.4px rgba(0, 0, 0, 0.45)",
+      "text-editor": "0px 4.99784px 77.9662px rgba(0, 0, 0, 0.55)",
       table:
         "0px 1px 2px 0px rgba(16, 24, 40, 0.06), 0px 1px 3px 0px rgba(16, 24, 40, 0.10)",
+      "chat-wrapper": "0px -37px 64.2px 0px rgba(0, 0, 0, 0.65)",
     },
     fontSize: {
       md: [
@@ -117,6 +120,12 @@ const config = {
         "24px",
         {
           fontWeight: "500",
+        },
+      ],
+      "lg-700": [
+        "24px",
+        {
+          fontWeight: "700",
         },
       ],
       "3xs-600": [
@@ -252,7 +261,7 @@ const config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 } satisfies Config;
 
 export default config;
