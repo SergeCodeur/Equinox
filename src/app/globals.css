@@ -12,4 +12,8 @@
     font-family: "Inter", sans-serif;
     scroll-behavior: smooth;
   }
+  .editor-bulletList,
+  .editor-orderedList {
+    padding-left: 20px;
+  }
 }
