@@ -21,7 +21,7 @@ const FolderRow = ({ folderName, folderId }: FolderRowsProps) => {
   return (
     <Link
       href={`/dashboard/${folderId}`}
-      className={`flex group text-xs text-stone-300 hover:text-white gap-3 leading-9 rounded-lg border border-transparent hover:border-white/10 hover:bg-slate-800 items-center px-3 ${
+      className={`flex group text-xs text-stone-300 hover:text-white gap-3 leading-9 rounded-lg border border-transparent hover:border-white/10 hover:bg-slate-800 items-center px-3 relative ${
         active ? "text-white border-white/10 bg-slate-800" : ""
       }`}
     >
@@ -34,27 +34,5 @@ const FolderRow = ({ folderName, folderId }: FolderRowsProps) => {
     </Link>
   );
 };
-
-// /* Property 1=Variant2 */
-
-// box-sizing: border-box;
-
-// /* Auto layout */
-// display: flex;
-// flex-direction: row;
-// align-items: center;
-// padding: 0px;
-
-// width: 177px;
-// height: 36px;
-
-// background: #1B1C3D;
-// border: 1px solid rgba(255, 255, 255, 0.1);
-// border-radius: 8px;
-
-// /* Inside auto layout */
-// flex: none;
-// order: 1;
-// flex-grow: 0;
 
 export default FolderRow;
