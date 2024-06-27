@@ -172,7 +172,7 @@ export const SearchIcon = ({ width, height, className }: SvgIconProps) => {
     </svg>
   );
 };
-export const UploadIcon = ({ width, height, className }: SvgIconProps) => {
+export const CircleBlueIcon = ({ width, height, className }: SvgIconProps) => {
   return (
     <svg
       width={width ? width : "45"}
@@ -347,6 +347,65 @@ export const CheckCircleIcon = ({ width, height, className }: SvgIconProps) => {
       />
       <path
         d="M11.5824 15.5535L9.29519 13.2664C9.17194 13.1431 9.00479 13.0739 8.8305 13.0739C8.65621 13.0739 8.48906 13.1431 8.36582 13.2664C8.24258 13.3896 8.17334 13.5567 8.17334 13.731C8.17334 13.8173 8.19034 13.9028 8.22336 13.9825C8.25639 14.0623 8.3048 14.1347 8.36582 14.1957L11.121 16.9509C11.378 17.2079 11.7933 17.2079 12.0503 16.9509L19.0239 9.97732C19.1471 9.85407 19.2164 9.68692 19.2164 9.51263C19.2164 9.33834 19.1471 9.17119 19.0239 9.04795C18.9006 8.92471 18.7335 8.85547 18.5592 8.85547C18.3849 8.85547 18.2178 8.92471 18.0945 9.04795L11.5824 15.5535Z"
+        fill="white"
+      />
+    </svg>
+  );
+};
+export const XmarkIcon = ({ width, height, className }: SvgIconProps) => {
+  return (
+    <svg
+      width={width ? width : "22"}
+      height={height ? height : "22"}
+      viewBox="0 0 22 22"
+      className={`fill-none ${className}`}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M7.75879 14.2406L14.2415 7.75977M7.75879 7.75977L14.2415 14.2406"
+        stroke="white"
+        strokeWidth="1.375"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+};
+export const EosIcon = ({ width, height }: SvgIconProps) => {
+  return (
+    <svg
+      width={width ? width : "44"}
+      height={height ? height : "45"}
+      viewBox="0 0 44 45"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle cx="21.785" cy="22.3554" r="21.785" fill="#2537E5" />
+      <circle
+        cx="21.785"
+        cy="22.3554"
+        r="21.5226"
+        stroke="white"
+        strokeOpacity="0.2"
+        strokeWidth="0.524941"
+      />
+      <path
+        d="M31.1034 24.0517C31.1034 22.863 30.8693 21.686 30.4144 20.5878C29.9595 19.4896 29.2928 18.4917 28.4523 17.6512C27.6117 16.8107 26.6139 16.1439 25.5157 15.689C24.4175 15.2341 23.2404 15 22.0517 15C20.863 15 19.686 15.2341 18.5878 15.689C17.4896 16.1439 16.4917 16.8107 15.6512 17.6512C14.8107 18.4917 14.1439 19.4896 13.689 20.5878C13.2341 21.686 13 22.863 13 24.0517L22.0517 24.0517H31.1034Z"
+        fill="white"
+      />
+    </svg>
+  );
+};
+export const PolygoneRightIcon = ({ width, height }: SvgIconProps) => {
+  return (
+    <svg
+      width={width ? width : "18"}
+      height={height ? height : "20"}
+      viewBox="0 0 18 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M15.5051 7.142C17.7053 8.4123 17.7053 11.5881 15.5051 12.8584L5.60405 18.5747C3.40382 19.845 0.653543 18.2571 0.653543 15.7165L0.653543 4.28382C0.653543 1.74322 3.40383 0.155348 5.60405 1.42565L15.5051 7.142Z"
         fill="white"
       />
     </svg>
