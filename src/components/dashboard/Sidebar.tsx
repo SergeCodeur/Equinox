@@ -7,7 +7,7 @@ import SidebarFooter from "./SidebarFooter";
 const Sidebar = ({ className }: { className?: string }) => {
   return (
     <div
-      className={`max-w-[227px] flex flex-col w-full py-6 px-4 bg-secondary h-screen justify-between ${className}`}
+      className={`max-w-[245px] flex flex-col w-full py-6 px-4 bg-secondary h-screen justify-between ${className}`}
     >
       <div>
         <div className="flex gap-[46px] items-center justify-between mb-[27px]">
