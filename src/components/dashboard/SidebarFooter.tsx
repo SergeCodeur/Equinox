@@ -6,8 +6,8 @@ const SidebarFooter = () => {
   return (
     <div className="space-y-4 mt-6">
       <div className="space-y-2 text-start">
-        <h3 className="text-white">
-          <span className="text-primary text-sm font-bold">40GB</span> sur 50GB
+        <h3 className="text-white text-sm ">
+          <span className="text-primary font-bold">40GB</span> sur 50GB
         </h3>
         <Progress className="h-[7px]" />
       </div>
