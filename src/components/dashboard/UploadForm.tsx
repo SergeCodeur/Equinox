@@ -1,5 +1,5 @@
 "use client";
-import { UploadIcon } from "@/assets/icons/SvgIcon";
+import { CircleBlueIcon } from "@/assets/icons/SvgIcon";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
@@ -125,7 +125,7 @@ const UploadForm = () => {
               isDragActive && "hidden"
             }`}
           >
-            <UploadIcon width={44} height={44} />
+            <CircleBlueIcon width={44} height={44} />
           </span>
           {renderStatutsMessage()}
         </div>
