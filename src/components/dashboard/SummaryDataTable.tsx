@@ -1,5 +1,8 @@
-import { SummaryProps, columns } from "@/app/dashboard/[id]/columns";
-import { FolderDataTable } from "@/app/dashboard/[id]/folder-data-table";
+import {
+  SummaryProps,
+  columns,
+} from "@/app/dashboard/(dashboard-first-layout)/[id]/columns";
+import { FolderDataTable } from "@/app/dashboard/(dashboard-first-layout)/[id]/folder-data-table";
 
 async function getData(): Promise<SummaryProps[]> {
   // Fetch data from your API here.
