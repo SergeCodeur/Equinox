@@ -158,6 +158,12 @@ const config = {
           fontWeight: "700",
         },
       ],
+      "4xl": [
+        "40px",
+        {
+          fontWeight: "400",
+        },
+      ],
       "4xl-500": [
         "40px",
         {
@@ -221,6 +227,9 @@ const config = {
       orange: {
         500: "#F2860A",
       },
+      yellow: {
+        600: "#BD7B17",
+      },
       red: {
         700: "#BD1717",
       },
@@ -259,9 +268,53 @@ const config = {
         "bleu-gradiant":
           "linear-gradient(180deg, rgba(4, 8, 26, 0.00) 0%, #04081A 100%)",
       },
+      perspective: {
+        "1000": "1000px",
+      },
+      transformStyle: {
+        preserve3d: "preserve-3d",
+      },
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    function ({
+      addUtilities,
+    }: {
+      addUtilities: (
+        utilities: Record<string, any>,
+        options?: { variants?: string[] }
+      ) => void;
+    }) {
+      addUtilities({
+        ".perspective-1000": {
+          perspective: "1000px",
+        },
+        ".transform-style-preserve-3d": {
+          transformStyle: "preserve-3d",
+        },
+        ".backfaceVisible": {
+          backfaceVisibility: "visible",
+        },
+        ".backfaceHidden": {
+          backfaceVisibility: "hidden",
+        },
+        ".rotateY-180": {
+          transform: "rotateY(180deg)",
+        },
+        ".rotateY-90": {
+          transform: "rotateY(90deg)",
+        },
+        ".rotateY-270": {
+          transform: "rotateY(270deg)",
+        },
+        ".rotateY-360": {
+          transform: "rotateY(360deg)",
+        },
+        variants: ["responsive"],
+      });
+    },
+  ],
 } satisfies Config;
 
 export default config;
