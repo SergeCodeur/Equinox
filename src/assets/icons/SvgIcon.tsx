@@ -411,3 +411,53 @@ export const PolygoneRightIcon = ({ width, height }: SvgIconProps) => {
     </svg>
   );
 };
+export const ExitIcon = ({ width, height }: SvgIconProps) => {
+  return (
+    <svg
+      width={width ? width : "21"}
+      height={height ? height : "21"}
+      viewBox="0 0 21 21"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M4.2413 17.576H15.9587C16.8819 17.576 17.6326 16.8252 17.6326 15.902V4.18466C17.6326 3.26149 16.8819 2.51074 15.9587 2.51074H4.2413C3.31813 2.51074 2.56738 3.26149 2.56738 4.18466V9.20723H8.4244V5.85857L13.4461 10.0434L8.4244 14.2281V10.8811H2.56738V15.902C2.56738 16.8252 3.31813 17.576 4.2413 17.576Z"
+        fill="white"
+      />
+    </svg>
+  );
+};
+export const ThumbsUpIcon = ({ width, height }: SvgIconProps) => {
+  return (
+    <svg
+      width={width ? width : "25"}
+      height={height ? height : "24"}
+      viewBox="0 0 25 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M23.5 10C23.5 9.46957 23.2893 8.96086 22.9142 8.58579C22.5391 8.21071 22.0304 8 21.5 8H15.18L16.14 3.43C16.16 3.33 16.17 3.22 16.17 3.11C16.17 2.7 16 2.32 15.73 2.05L14.67 1L8.09 7.58C7.72 7.95 7.5 8.45 7.5 9V19C7.5 19.5304 7.71071 20.0391 8.08579 20.4142C8.46086 20.7893 8.96957 21 9.5 21H18.5C19.33 21 20.04 20.5 20.34 19.78L23.36 12.73C23.45 12.5 23.5 12.26 23.5 12V10ZM1.5 21H5.5V9H1.5V21Z"
+        fill="white"
+        fill-opacity="0.5"
+      />
+    </svg>
+  );
+};
+export const ThumbsDownIcon = ({ width, height }: SvgIconProps) => {
+  return (
+    <svg
+      width={width ? width : "25"}
+      height={height ? height : "24"}
+      viewBox="0 0 25 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M23.5 14C23.5 14.5304 23.2893 15.0391 22.9142 15.4142C22.5391 15.7893 22.0304 16 21.5 16H15.18L16.14 20.57C16.16 20.67 16.17 20.78 16.17 20.89C16.17 21.3 16 21.68 15.73 21.95L14.67 23L8.09 16.42C7.72 16.05 7.5 15.55 7.5 15V5C7.5 4.46957 7.71071 3.96086 8.08579 3.58579C8.46086 3.21071 8.96957 3 9.5 3H18.5C19.33 3 20.04 3.5 20.34 4.22L23.36 11.27C23.45 11.5 23.5 11.74 23.5 12V14ZM1.5 3H5.5V15H1.5V3Z"
+        fill="white"
+        fill-opacity="0.5"
+      />
+    </svg>
+  );
+};
