@@ -15,7 +15,7 @@ const SignIn = () => {
         <div className="flex flex-col justify-between relative z-[11] h-full">
           <div className="mt-[30px] 2xl:mt-[125px] ml-[90px] 2xl:ml-[125px] max-w-[320px] w-full">
             <h2 className="mb-2 text-[32px] font-semibold text-white">
-              S&apos;inscrire
+              Se connecter
             </h2>
             <h3 className="text-white text-sm">Commencez dès maintenant.</h3>
             <SignInForm className="mt-6 mb-6" />
